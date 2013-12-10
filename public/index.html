@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sequence</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="javascripts/clientSocket.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	</head>	
+	<body>
+		<div id="instructions-page" class="popup">
+			<div id="instructions-text">
+			<p id="instructions-title">Welcome to SEQUENCE</p>
+			<p>This is the online version of the popular card-board game Sequence! Play with a friend and see who can make a sequence first.</p>
+			<p>How to Play:</p>
+			<ul>
+				<li>Enter a username</li>
+				<li>You need exactly 2 people to play this game, so you may need to wait for another user to connect in order to start the game.</li>
+				<li>Once 2 players have connected, you will see a 10 x 10 Board of cards and 7 cards at the bottom.<br>
+					The 10 x 10 Board is the same for both players. There are 2 occurences of each card on the board.<br>
+					The 7 cards at the bottom are the cards in your hand. They differ for each player and will get updated after each turn. These cards are drawn from a shuffled deck of 104 cards (2 standard card decks).</li>
+				<li>You will be assigned as either the Blue player or Green player.<br>
+					Take turns clicking on cards on the Board to place tokens of your color on the Board.<br>
+					You can only click on spaces that have cards that are in your hand (unless you have a Two-Eyed Jack).<br>
+					Once you have placed a token on the board, that corresponding card from your hand will be discarded and replaced with a new card drawn from the shuffled deck. <br>
+					You cannot click on a space that already has a token in it (unless you have a One-Eyed Jack).
+					Use the "View All Possible Moves" button on the left to spot all the spaces you can select.</li>
+				<li>The 4 corners are "Free Spaces".<br>
+					You cannot place a token on a "Free Space".<br>
+					Both players can use the "Free Space" to his/her advantage. </li>
+				<li>There are 2 Special Wild Cards:
+					<ul>
+					<li><b>Two-Eyed Jack</b> (Jack of Clubs and Jack of Diamonds) : Represent any card. May be used to place a token on any space on the board. Use them to complete a sequence of block your opponent.
+					</li>
+					<li><b>One-Eyed Jack</b> (Jack of Spades and Jack of Hearts) : Can remove an opponent's token from the board. However, you cannot remove a token that is part of a completed sequence.
+					</li>
+					</ul>
+				</li>
+				<li>A sequence is any connection of 5 tokens in any direction (horizontal, vertical or diagonal).<br>
+					The first player to form a sequence of his/her color wins! </li>
+			</ul>
+			<p id="instructions-close">Good Luck and Have Fun!</p>
+			<p id="instructions-close">Click anywhere to go back to the game.</p>
+			</div>
+		</div>
+		<div id="alert-page" class="popup">
+			<div id="alert-text">
+				<p id="alert-title">Alert!</p>
+				<p id="alert-message"></p>
+				<p id="alert-close">Click anywhere to return to the game.</p>
+			</div>
+		</div>
+		<div id="win-page" class="popup">
+			<div id="win-text">
+				<p id="alert-title">Alert!</p>
+				<p id="win-message"></p>
+				<p id="alert-close">Click anywhere to play a new game.</p>
+			</div>
+		</div>
+		<div id="game-history-page" class="popup">
+			<div id="game-history-text">
+				<p id="history"></p>
+				<p id="instructions-close">Click anywhere go back to the game.</p>
+			</div>
+		</div>
+		<div id="top">
+			<div id="instructions" class="popup">
+				<p><b>HOW TO PLAY</b></p>
+			</div>
+			<img id="logo" src="../images/logo.png">
+			<div id="messages">
+				<div id="enterUser">
+					<h2>Enter a username</h2>
+					<input id="user" type="text" placeholder="UserName" />
+					<input id="submitUser" type="submit" value="submit" />
+				</div>
+				<p id='waiting' hidden> Waiting for your opponent to connect... </p>
+				<p id="overQuorum" hidden> A game is currently in progress. Please wait your turn.</p>
+				<p id="turn" class="mobile"></p>
+				<p id="color" hidden></p>
+				<button id="viewAll" class="mobile">View All Possible Moves</button>
+			</div>
+		</div>
+		<div id="content">
+			<div id="leftCol">
+				<p id="welcome" hidden></p>
+				<p id="opponent" hidden></p>
+				<p id="color" hidden></p>
+				<p id="turn" hidden></p>
+				<p id="jack2eyedtip" hidden><b>Hint</b>: You have a <b>Two-Eyed Jack</b> (Jack of Clubs or Jack of Diamonds) in your Hand. You can place a token on any space as long as its not already occupied.</p>
+				<p id="jack1eyedtip" hidden><b>Hint</b>: You have a <b>One-Eyed Jack</b> (Jack of Spades or Jack of Hearts) in your Hand. You can remove any of your opponents token as long as it is not already in a completed sequence. </p>
+				<button id="getDB" hidden>View Game History</button>
+			</div>
+			<div id="middleCol">
+				<div id="table"></div>
+				<br>
+				<div id="hand">
+					<span id="handSpan"></span>
+					<br>
+				</div>
+			</div>
+			<div id="chat">
+				<p id="chat-title" hidden>Send a Message to your opponent</p>
+				<input id="message" type="text" hidden />
+				<input id="sendMessage" type="submit" value="Send" hidden/>
+				<div id="chatMessages" hidden>
+				</div>
+				<br>
+			</div>
+		</div>
+	</body>
+</html>

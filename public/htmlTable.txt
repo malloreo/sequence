@@ -1,0 +1,122 @@
+<table id="board" border="1">
+					<tr id="row0">
+						<td id="_0_0" class="wild"></td>
+						<td id="_0_1" class="s2"></td>
+						<td id="_0_2" class="s3"></td>
+						<td id="_0_3" class="s4"></td>
+						<td id="_0_4" class="s5"></td>
+						<td id="_0_5" class="s6"></td>
+						<td id="_0_6" class="s7"></td>
+						<td id="_0_7" class="s8"></td>
+						<td id="_0_8" class="s9"></td>
+						<td id="_0_9" class="wild"></td>
+					</tr>
+					<tr id="row1">
+						<td id="_1_0" class="c6"></td>
+						<td id="_1_1" class="c5"></td>
+						<td id="_1_2" class="c4"></td>
+						<td id="_1_3" class="c3"></td>
+						<td id="_1_4" class="c2"></td>
+						<td id="_1_5" class="ha"></td>
+						<td id="_1_6" class="hk"></td>
+						<td id="_1_7" class="hq"></td>
+						<td id="_1_8" class="h10"></td>
+						<td id="_1_9" class="s10"></td>
+					</tr>
+					<tr id="row2">
+						<td id="_2_0" class="c7"></td>
+						<td id="_2_1" class="sa"></td>
+						<td id="_2_2" class="d2"></td>
+						<td id="_2_3" class="d3"></td>
+						<td id="_2_4" class="d4"></td>
+						<td id="_2_5" class="d5"></td>
+						<td id="_2_6" class="d6"></td>
+						<td id="_2_7" class="d7"></td>
+						<td id="_2_8" class="h9"></td>
+						<td id="_2_9" class="sq"></td>
+					</tr>
+					<tr id="row3">
+						<td id="_3_0" class="c8"></td>
+						<td id="_3_1" class="sk"></td>
+						<td id="_3_2" class="c6"></td>
+						<td id="_3_3" class="c5"></td>
+						<td id="_3_4" class="c4"></td>
+						<td id="_3_5" class="c3"></td>
+						<td id="_3_6" class="c2"></td>
+						<td id="_3_7" class="d8"></td>
+						<td id="_3_8" class="h8"></td>
+						<td id="_3_9" class="sk"></td>
+					</tr>
+					<tr id="row4">
+						<td id="_4_0" class="c9"></td>
+						<td id="_4_1" class="sq"></td>
+						<td id="_4_2" class="c7"></td>
+						<td id="_4_3" class="h6"></td>
+						<td id="_4_4" class="h5"></td>
+						<td id="_4_5" class="h4"></td>
+						<td id="_4_6" class="ha"></td>
+						<td id="_4_7" class="d9"></td>
+						<td id="_4_8" class="h7"></td>
+						<td id="_4_9" class="sa"></td>
+					</tr>
+					<tr id="row5">
+						<td id="_5_0" class="c10"></td>
+						<td id="_5_1" class="s10"></td>
+						<td id="_5_2" class="c8"></td>
+						<td id="_5_3" class="h7"></td>
+						<td id="_5_4" class="h2"></td>
+						<td id="_5_5" class="h3"></td>
+						<td id="_5_6" class="hk"></td>
+						<td id="_5_7" class="d10"></td>
+						<td id="_5_8" class="h6"></td>
+						<td id="_5_9" class="d2"></td>
+					</tr>
+					<tr id="row6">
+						<td id="_6_0" class="cq"></td>
+						<td id="_6_1" class="s9"></td>
+						<td id="_6_2" class="c9"></td>
+						<td id="_6_3" class="h8"></td>
+						<td id="_6_4" class="h9"></td>
+						<td id="_6_5" class="h10"></td>
+						<td id="_6_6" class="hq"></td>
+						<td id="_6_7" class="dq"></td>
+						<td id="_6_8" class="h5"></td>
+						<td id="_6_9" class="d3"></td>
+					</tr>
+					<tr id="row7">
+						<td id="_7_0" class="ck"></td>
+						<td id="_7_1" class="s8"></td>
+						<td id="_7_2" class="c10"></td>
+						<td id="_7_3" class="cq"></td>
+						<td id="_7_4" class="ck"></td>
+						<td id="_7_5" class="ca"></td>
+						<td id="_7_6" class="da"></td>
+						<td id="_7_7" class="dk"></td>
+						<td id="_7_8" class="h4"></td>
+						<td id="_7_9" class="d4"></td>
+					</tr>
+					<tr id="row8">
+						<td id="_8_0" class="ca"></td>
+						<td id="_8_1" class="s7"></td>
+						<td id="_8_2" class="s6"></td>
+						<td id="_8_3" class="s5"></td>
+						<td id="_8_4" class="s4"></td>
+						<td id="_8_5" class="s3"></td>
+						<td id="_8_6" class="s2"></td>
+						<td id="_8_7" class="h2"></td>
+						<td id="_8_8" class="h3"></td>
+						<td id="_8_9" class="d5"></td>
+					</tr>
+					<tr id="row9">
+						<td id="_9_0" class="wild"></td>
+						<td id="_9_1" class="da"></td>
+						<td id="_9_2" class="dk"></td>
+						<td id="_9_3" class="dq"></td>
+						<td id="_9_4" class="d10"></td>
+						<td id="_9_5" class="d9"></td>
+						<td id="_9_6" class="d8"></td>
+						<td id="_9_7" class="d7"></td>
+						<td id="_9_8" class="d6"></td>
+						<td id="_9_9" class="wild"></td>
+					</tr>
+</table>

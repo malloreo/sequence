@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  width:100%;
+}
+
+#content{
+	display:inline;
+	width:100%;
+}
+
+#logo{
+	display: block;
+    margin: 0 auto;
+}
+
+#board, #history-table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#welcome, #turn{
+	font-weight: bold;
+}
+	
+#hand, #messages, #top{
+	text-align: center;
+}
+
+#instructions{
+	margin-left:2%;
+	float:left;
+	position:absolute;
+}
+
+#instructions-page, #game-history-page{
+	position: center;
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+	opacity: 0.95;
+	font-weight: bold; 
+	background: #9BC8FC;
+}
+
+#instructions-title{
+	font-size: 30px;
+	text-align: center;
+}
+
+#instructions-text, #game-history-text{
+	width: 70%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#instructions-close{
+	text-align:center;
+}
+
+#leftCol{
+	float: left;
+	width: 20%;
+	height:100%;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+#middleCol{
+	float:left;
+	width:50%;
+}
+
+#chat{
+	float:left;
+	width:20%;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+.popup:hover{
+	cursor:pointer;
+}
+
+#alert-page, #win-page{
+	position: center;
+	display: none;
+	position: fixed;
+	height: 100%;
+	z-index: 5;
+	opacity: 0.95;
+	font-weight: bold;
+	width:100%;
+}
+
+#alert-text{
+	background: #E64C4C;
+	width: 50%;
+	height:40%;
+	margin: auto;
+	margin-top: 10px;
+	text-align:center;
+}
+#win-text{
+	background: #ffff00;
+	width: 50%;
+	height:40%;
+	margin: auto;
+	margin-top: 10px;
+	text-align:center;
+}
+
+#alert-title{
+	text-align:center;
+	font-size: 30px;
+}
+
+#alert-close{
+	text-align:center;
+}
+#turn-mobile{
+	display:none;
+}
+
+#history{
+	text-align:center;
+}
+
+td{
+	width:36px;
+	height:48px;
+	background-repeat: no-repeat;
+}
+
+.mobile{
+	display:none;
+}
+
+#date{
+	width:200px;
+}
+#time{
+	width:200px;
+}
+
+.wild{background-image:url(../images/wild.png);}
+.sa{background-image:url(../images/sa.png);}
+.s2{background-image:url(../images/s2.png);}
+.s3{background-image:url(../images/s3.png);}
+.s4{background-image:url(../images/s4.png);}
+.s5{background-image:url(../images/s5.png);}
+.s6{background-image:url(../images/s6.png);}
+.s7{background-image:url(../images/s7.png);}
+.s8{background-image:url(../images/s8.png);}
+.s9{background-image:url(../images/s9.png);}
+.s10{background-image:url(../images/s10.png);}
+.sq{background-image:url(../images/sq.png);}
+.sk{background-image:url(../images/sk.png);}
+
+.da{background-image:url(../images/da.png);}
+.d2{background-image:url(../images/d2.png);}
+.d3{background-image:url(../images/d3.png);}
+.d4{background-image:url(../images/d4.png);}
+.d5{background-image:url(../images/d5.png);}
+.d6{background-image:url(../images/d6.png);}
+.d7{background-image:url(../images/d7.png);}
+.d8{background-image:url(../images/d8.png);}
+.d9{background-image:url(../images/d9.png);}
+.d10{background-image:url(../images/d10.png);}
+.dq{background-image:url(../images/dq.png);}
+.dk{background-image:url(../images/dk.png);}
+
+.ca{background-image:url(../images/ca.png);}
+.c2{background-image:url(../images/c2.png);}
+.c3{background-image:url(../images/c3.png);}
+.c4{background-image:url(../images/c4.png);}
+.c5{background-image:url(../images/c5.png);}
+.c6{background-image:url(../images/c6.png);}
+.c7{background-image:url(../images/c7.png);}
+.c8{background-image:url(../images/c8.png);}
+.c9{background-image:url(../images/c9.png);}
+.c10{background-image:url(../images/c10.png);}
+.cq{background-image:url(../images/cq.png);}
+.ck{background-image:url(../images/ck.png);}
+
+.ha{background-image:url(../images/ha.png);}
+.h2{background-image:url(../images/h2.png);}
+.h3{background-image:url(../images/h3.png);}
+.h4{background-image:url(../images/h4.png);}
+.h5{background-image:url(../images/h5.png);}
+.h6{background-image:url(../images/h6.png);}
+.h7{background-image:url(../images/h7.png);}
+.h8{background-image:url(../images/h8.png);}
+.h9{background-image:url(../images/h9.png);}
+.h10{background-image:url(../images/h10.png);}
+.hq{background-image:url(../images/hq.png);}
+.hk{background-image:url(../images/hk.png);}
+
+
+/*Mobile View*/
+@media (max-width: 400px) {
+	#leftCol{
+		/*width:15%;*/
+		display:none;
+	}
+	#middleCol{
+		width:100%;
+	}
+	#chat, #getDB, #chat-title, #chatMessages, #message, #sendMessage{
+		display:none;
+		width:0%;
+	}
+	h2{
+		font-size: 50px;
+	}
+	#user, #submitUser{
+		width:60%;
+		height:40%;
+	}
+	#logo{
+		width:50%;
+	}
+	#instructions{
+		width:10%;
+		font-size: 6px;
+	}
+	#instructions-title{
+		font-size: 10px;
+		text-align: center;
+	}
+
+	#instructions-text{
+		width:100%;
+		margin-top: 0;
+		font-size:5px;
+	}
+	td{
+		width:17px;
+		height:17px;
+		background-size:34px, 40px;
+		background-repeat: no-repeat;
+	}
+	.wild{
+		background-size: 17px, 17px;
+	}
+	#handSpan > img{
+		width: 32px;
+	}
+	#alert-text, #win-text{
+		width:100%;
+		height:100%;
+	}
+	[occupied]{
+		background-size:17px, 17px;
+	}
+}
