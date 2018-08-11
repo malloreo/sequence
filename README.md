@@ -1,4 +1,4 @@
-sequence
+SEQUENCE
 ========
 
 A web version of the super fun boardgame "Sequence".
